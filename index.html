@@ -27,7 +27,7 @@
             <li class="item"> <a href="" class="link">Контакты</a></li>
         </ul>
     </nav>
-    <div>
+    <div class="auth-nav">
         <ul class="auth-nav list">
             <li class="item">
                 <a href="tel:+380961111111" class="header-contact">+380961111111</a>
@@ -49,21 +49,21 @@
     <!-- секція 2 -->
     <section class="section no-paddingbottom">
         <div class="container">
-            <h2 class="section-title">Особенности</h2>
+            <h2 class="visually-hidden">Особенности</h2>
     <ul class="feature">
-        <li>
+        <li class="item">
             <h3 class="title">Внимание к деталям</h3>
             <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
-        <li>
+        <li class="item">
             <h3 class="title">Пунктуальность</h3>
             <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
-        <li>
+        <li class="item">
         <h3 class="title">Планирование</h3>
             <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
-        <li>
+        <li class="item">
             <h3 class="title">Современные технологии</h3>
             <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
@@ -74,44 +74,53 @@
     <section class="section">
         <div class="container">
             <h2 class="section-title centered">Чем мы занимаемся</h2>
-        <ul class="img"> 
-            <li><img src="./images/box1.jpg" alt="кодування" width="370"></li>
-            <li><img src="./images/img(1).jpg" alt="адаптация" width="370"></li>
-            <li><img src="./images/img(2).jpg" alt="дизайн" width="370"></li>
+        <ul class="images"> 
+            <li class="item"><img src="./images/box1.jpg" alt="кодування" width="370"></li>
+            <li class="item"><img src="./images/img(1).jpg" alt="адаптация" width="370"></li>
+            <li class="item"><img src="./images/img(2).jpg" alt="дизайн" width="370"></li>
         </ul>
         </div>
     </section>
     <!-- Наша команда -->
     <section class="section no-padding">
         <div class="container">
-            <h2 class="section-title centered">Наша команда</h2>
-        <ul class="team">
-            <li>
-                <img src="./images/imgigor.jpg" alt="фото" width="270">
-                <h3 class="title">Игорь Демьяненко</h3>
-                <p class="text">Product Designer</p>
+            <h2 class="section-title centered padding">Наша команда</h2>
+        <ul class="team no-padding">
+            <li class="item">
+                    <img src="./images/imgigor.jpg" alt="фото" width="270">
+                <div class="images-team">
+                    <h3 class="title">Игорь Демьяненко</h3>
+                    <p class="text">Product Designer</p>
+                </div>
             </li>
-            <li>
+            <li class="item">
                 <img src="./images/imgolga.jpg" alt="фото" width="270">
-                <h3 class="title">Ольга Репина</h3>
-                <p class="text">Frontend Developer</p>
+                <div class="images-team">
+                    <h3 class="title">Ольга Репина</h3>
+                    <p class="text">Frontend Developer</p>
+                </div>
             </li>
-            <li>
+            <li class="item">
                 <img src="./images/imgnikolai.jpg" alt="фото" width="270">
-                <h3 class="title">Николай Тарасов</h3>
-                <p class="text">Marketing</p>
+                <div class="images-team">
+                    <h3 class="title">Николай Тарасов</h3>
+                    <p class="text">Marketing</p>
+                </div>
             </li>
-            <li>
+            <li class="item">
                 <img src="./images/imgmisha.jpg" alt="фото" width="270">
-                <h3 class="title">Михаил Ермаков</h3>
-                <p class="text">UI Designer</p>
+                <div class="images-team">
+                    <h3 class="title">Михаил Ермаков</h3>
+                    <p class="text">UI Designer</p>
+                </div>
             </li>
         </ul>
         </div>
     </section>
 </main>
 <footer class="footer">
-    <a href="./" class="logo"> 
+    <div class="container">
+        <a href="./" class="logo"> 
         <span class="accent">Web</span><span class="footer-logo">Studio</span>
     </a>
     <address>
@@ -126,6 +135,7 @@
             <li><a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a></li>
         </ul>
     </address>
+    </div>
 </footer>
 </body>
 </html>

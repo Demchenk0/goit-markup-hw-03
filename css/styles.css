@@ -29,11 +29,15 @@ body {
 }
 
 /* крапки в лишках и высота */
+ul {
+    list-style: none;
+}
 .list {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 /* WebStudio */
 
 /* page-heder */
@@ -79,6 +83,7 @@ body {
 .site-nav {
     display: flex;
     margin-left: 93px;
+    align-items: center;
 }
 
 .site-nav .item + .item {
@@ -109,7 +114,7 @@ body {
 /* Tel шапка */
 .auth-nav {
     display: flex;
-    margin-left: autoxs;
+    margin-left: auto;
 }
 .auth-nav .item + .item {
     margin-left: 50px;
@@ -129,13 +134,21 @@ body {
     background-color: var(--secont-bg-color);
     text-align: center;
 }
+/* .container .hero-title {
+    margin: auto;
+} */
 .hero-title {
+    width: 696px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     margin-bottom: 30px;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
-    text-transform: uppercase;   
+    text-transform: uppercase;
+    /* text-align: center; */
 }
 /* button */
 .button {
@@ -162,11 +175,37 @@ body {
 .section-title.centered {
     text-align: center;
 }
+
+/* сховати  */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* h3 Маленький жирный заголовок */
 .feature {
    margin: 0;
    padding: 0;
+   display: flex;
+   flex-wrap: wrap;
 }
+
+.feature .item {
+    width: 270px;
+}
+
+.feature .item + .item {
+    margin-left: 30px;
+}
+
 .feature .title,
 .team .title {
     margin-top: 0;
@@ -176,11 +215,33 @@ body {
     font-size: 14px;
     text-transform: uppercase;
 }
+
+/* images */
+.padding {
+    padding-top: 94px;
+}
+
+.images {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.images .item + .item {
+    margin-left: 30px;
+}
 /* Our Team */
+.images-team {
+    margin-top: 30px;
+    padding-bottom: 94px;
+}
+
 .team {
     margin: 0;
     padding: 0;
+    display: flex;
 }
+
 .feature .text,
 .team .text {
     margin-top: 0;
@@ -188,27 +249,32 @@ body {
     font-weight: 500;
     font-size: 16px;
 }
+.team .item + .item {
+    margin-left: 30px;
+}
+
 /* footer */
 .footer-logo {
     color: var(--white-color);
     text-decoration: none;
     
 }
+
 .footer-link {
     color: var(--white-color);
     text-decoration: none;
     font-style: normal;
 }
+
 .footer-contacts {
     color: var(--third-text-color);
     text-decoration: none;
     font-style: normal;
 }
+
 .footer {
     background-color: var(--secont-bg-color);
 }
-
-
 
 .footer-contacts:hover,
 .footer-contacts:focus,
@@ -232,7 +298,10 @@ body {
     color: var(--white-color);
     background-color: var(--accent-bg-color);
 }
+
 /* Project */
+
+
 .project .title{
     color: var(--secont-text-color);
     font-weight: 700;
